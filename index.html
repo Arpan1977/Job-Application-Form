@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Application Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="./style.css" rel="Stylesheet" />
+  </head>
+
+  <body>
+    <div id="container">
+      <form>
+        <div>
+          <h1>Job Application Form</h1>
+          <p>Codeshala Tech Pvt. Ltd.</p>
+        </div>
+
+        <section>
+          <h2>Personal Information</h2>
+          <!--First form row start-->
+          <div class="form-row">
+            <div class="form-element">
+              <label>First Name</label>
+              <input type="text" />
+            </div>
+            <div class="form-element">
+              <label>Last Name</label>
+              <input type="text"/>
+            </div>
+          </div>
+          <!--First form row end-->
+
+          <!--second form row start-->
+          <div class="form-row">
+            <div class="form-element">
+              <label>Email Address</label>
+              <input type="email"/>
+            </div>
+            <div class="form-element">
+              <label>Phone Number</label>
+              <input type="tel"/>
+            </div>
+          </div>
+          <!--second form row end-->
+
+          <!--third form row start-->
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label>Current Address</label>
+              <textarea></textarea>
+            </div>
+          </div>
+          <!--third form row end-->
+        </section>
+
+        <hr />
+
+        <section>
+          <h2>Professional Information</h2>
+
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label>Position Applied For</label>
+              <select>
+                <option>Frontend Developer</option>
+                <option>Backend Developer</option>
+                <option>Fullstack Developer</option>
+                <option>Cloud Architect</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label for="experience">Years of Experience</label>
+              <input type="number" id="experience"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label for="upload">Upload Resume</label>
+              <input type="file" id="upload"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label for="employment-type">Employment Type</label>
+              <div class="radio-group">
+                <div class="radio">
+                  <label for="full-time">Full Time</label>
+                  <input type="radio" name="employment-type" id="full-time"/>
+                </div>
+                <div class="radio">
+                  <label for="part-time">Part Time</label>
+                  <input type="radio" name="employment-type" id="part-time"/>
+                </div>
+                <div class="radio">
+                  <label for="full-stack">Full Stack</label>
+                  <input type="radio" name="employment-type" id="full-stack"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label for="skills">Skills (Check all that apply)</label>
+              <div class="checkbox-group">
+                <div class="checkbox">
+                  <label for="html">HTML</label>
+                  <input type="checkbox" id="html"/>
+                </div>
+                <div class="checkbox">
+                  <label for="css">CSS</label>
+                  <input type="checkbox" id="css"/>
+                </div>
+                <div class="checkbox">
+                  <label for="js">JavaScript</label>
+                  <input type="checkbox" id="js"/>
+                </div>
+                <div class="checkbox">
+                  <label for="react">React</label>
+                  <input type="checkbox" id="react"/>
+                </div>
+                <div class="checkbox">
+                  <label for="node">Node.js</label>
+                  <input type="checkbox" id="node"/>
+                </div>
+            </div>
+          </div>
+        </section>
+        <hr/>
+        <section>
+          <h2>Additional Information</h2>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label for="date">Available Start Date</label>
+              <input type="date"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label for="salary">Expected Salary Range</label>
+              <input type="range"/>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <label for="comment">Additional Comment</label>
+              <textarea></textarea>
+            </div>
+          </div>
+        </section>
+
+        <hr/>
+
+        <section id="gap">
+          <div class="form-row">
+            <div class="form-element w-full">
+              <div class="checkbox">
+                <input type="checkbox" />
+                <label for="terms">I agree to the terms and conditions *</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-element w-full">
+              <div class="button-group">
+                <button type="reset">Reset Form</button>
+                <button type="submit">Submit Application</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </form>
+    </div>
+  </body>
+
+</html>
+
+
+
+
