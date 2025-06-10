@@ -1,182 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Job Application Form</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="./style.css" rel="Stylesheet" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Job Application Form - ABC Corp</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Job Application Form - ABC Corp</h1>
+  </header>
 
-  <body>
-    <div id="container">
-      <form>
-        <div>
-          <h1>Job Application Form</h1>
-          <p>Codeshala Tech Pvt. Ltd.</p>
-        </div>
+  <main>
+    <section class="intro">
+      <p>Join our team! Please fill out the form below to apply.</p>
+    </section>
 
-        <section>
-          <h2>Personal Information</h2>
-          <!--First form row start-->
-          <div class="form-row">
-            <div class="form-element">
-              <label>First Name</label>
-              <input type="text" />
-            </div>
-            <div class="form-element">
-              <label>Last Name</label>
-              <input type="text"/>
-            </div>
-          </div>
-          <!--First form row end-->
+    <form action="#" method="POST" enctype="multipart/form-data">
+      <div class="form-group">
+        <label for="fullName">Full Name *</label>
+        <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name" />
+      </div>
 
-          <!--second form row start-->
-          <div class="form-row">
-            <div class="form-element">
-              <label>Email Address</label>
-              <input type="email"/>
-            </div>
-            <div class="form-element">
-              <label>Phone Number</label>
-              <input type="tel"/>
-            </div>
-          </div>
-          <!--second form row end-->
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required placeholder="yourname@example.com" />
+      </div>
 
-          <!--third form row start-->
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label>Current Address</label>
-              <textarea></textarea>
-            </div>
-          </div>
-          <!--third form row end-->
-        </section>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. +1234567890" />
+      </div>
 
-        <hr />
+      <div class="form-group">
+        <label for="position">Position Applying For *</label>
+        <select id="position" name="position" required>
+          <option value="">--Select Position--</option>
+          <option value="software-engineer">Software Engineer</option>
+          <option value="marketing-specialist">Marketing Specialist</option>
+          <option value="customer-support">Customer Support</option>
+        </select>
+      </div>
 
-        <section>
-          <h2>Professional Information</h2>
+      <div class="form-group">
+        <label for="experience">Years of Experience *</label>
+        <input type="number" id="experience" name="experience" required min="0" placeholder="e.g. 3" />
+      </div>
 
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label>Position Applied For</label>
-              <select>
-                <option>Frontend Developer</option>
-                <option>Backend Developer</option>
-                <option>Fullstack Developer</option>
-                <option>Cloud Architect</option>
-              </select>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label for="experience">Years of Experience</label>
-              <input type="number" id="experience"/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label for="upload">Upload Resume</label>
-              <input type="file" id="upload"/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label for="employment-type">Employment Type</label>
-              <div class="radio-group">
-                <div class="radio">
-                  <label for="full-time">Full Time</label>
-                  <input type="radio" name="employment-type" id="full-time"/>
-                </div>
-                <div class="radio">
-                  <label for="part-time">Part Time</label>
-                  <input type="radio" name="employment-type" id="part-time"/>
-                </div>
-                <div class="radio">
-                  <label for="full-stack">Full Stack</label>
-                  <input type="radio" name="employment-type" id="full-stack"/>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label for="skills">Skills (Check all that apply)</label>
-              <div class="checkbox-group">
-                <div class="checkbox">
-                  <label for="html">HTML</label>
-                  <input type="checkbox" id="html"/>
-                </div>
-                <div class="checkbox">
-                  <label for="css">CSS</label>
-                  <input type="checkbox" id="css"/>
-                </div>
-                <div class="checkbox">
-                  <label for="js">JavaScript</label>
-                  <input type="checkbox" id="js"/>
-                </div>
-                <div class="checkbox">
-                  <label for="react">React</label>
-                  <input type="checkbox" id="react"/>
-                </div>
-                <div class="checkbox">
-                  <label for="node">Node.js</label>
-                  <input type="checkbox" id="node"/>
-                </div>
-            </div>
-          </div>
-        </section>
-        <hr/>
-        <section>
-          <h2>Additional Information</h2>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label for="date">Available Start Date</label>
-              <input type="date"/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label for="salary">Expected Salary Range</label>
-              <input type="range"/>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <label for="comment">Additional Comment</label>
-              <textarea></textarea>
-            </div>
-          </div>
-        </section>
+      <div class="form-group">
+        <label for="resume">Upload Resume *</label>
+        <input type="file" id="resume" name="resume" required accept=".pdf, .docx" />
+      </div>
 
-        <hr/>
+      <div class="form-group">
+        <label for="employment-type">Employment Type *</label>
+        <select id="employment-type" name="employmentType" required>
+          <option value="">--Select Type--</option>
+          <option value="fulltime">Full Time</option>
+          <option value="parttime">Part Time</option>
+        </select>
+      </div>
 
-        <section id="gap">
-          <div class="form-row">
-            <div class="form-element w-full">
-              <div class="checkbox">
-                <input type="checkbox" />
-                <label for="terms">I agree to the terms and conditions *</label>
-              </div>
-            </div>
-          </div>
-          <div class="form-row">
-            <div class="form-element w-full">
-              <div class="button-group">
-                <button type="reset">Reset Form</button>
-                <button type="submit">Submit Application</button>
-              </div>
-            </div>
-          </div>
-        </section>
-      </form>
-    </div>
-  </body>
+      <div class="form-group">
+        <button type="submit">Submit Application</button>
+      </div>
+    </form>
+  </main>
 
+  <footer>
+    <p>&copy;Surajan Shrestha. All rights reserved.</p>
+  </footer>
+</body>
 </html>
-
-
-
-
